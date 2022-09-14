@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<hmtl lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Form Two</title>
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <header>
+      <h1 id="title">Registration for Coding</h1>
+      <p id="description">Answer these questions about your coding experience</p>
+    </header>
+    <main>
+      <form id="survey-form" method="post" action="https://register-demo.freecodecamp.org">
+        <fieldset>
+          <label id="name-label">Name: <input type="text" id="name" name="name" placeholder="Enter your name" required></label>
+          <label id="email-label">Email: <input type="email" id="email" name="email" placeholder="Enter your email" required></label>
+          <label id="number-label">Age: <input type="number" id="number" name="age" min="6" max="120" placeholder="Age"></label>
+        </fieldset>
+        <fieldset>
+          <label>What are you now?
+            <select id="dropdown" name="role">
+              <option value="">Select current role</option>
+              <option value="1">Unemployed</option>
+              <option value="2">Full-Time Student</option>
+              <option value="3">Full-Time Worker</option>
+              <option value="4">Part-Time Worker</option>
+              <option value="5">Other</option>
+            </select>
+          </label>
+        </fieldset>
+        <fieldset id="enjoy">
+          <legend>Do you enjoy freeCodeCamp?</legend>
+            <label class="radio"><input type="radio" name="freeCodeCamp-like" value="yes" class="inline"> Yes</label><br>
+            <label class="radio"><input type="radio" name="freeCodeCamp-like" value="no" class="inline"> No</label><br>
+            <label class="radio"><input type="radio" name="freeCodeCamp-like" value="not-sure" class="inline"> Not Sure</label>
+        </fieldset>
+        <fieldset>
+          <label>What is your favorite part of freeCodeCamp?<br>
+            <select id="dropdown2" name="favorite-part">
+              <option value="">Select an option</option>
+              <option value="1">Learning</option>
+              <option value="2">Projects</option>
+              <option value="3">Community</option>
+            </select>
+          </label>
+        </fieldset>
+        <fieldset>
+          <legend>What programming languages are you learning?<br>(Check all that apply)</legend>
+          <label><input type="checkbox" value="HTML" class="inline">HTML</label>
+          <label><input type="checkbox" value="CSS" class="inline">CSS</label>
+          <label><input type="checkbox" value="JavaScript" class="inline">JavaScript</label>
+          <label><input type="checkbox" value="php" class="inline">PHP</label>
+          <label><input type="checkbox" value="SQL" class="inline">SQL</label>
+          <label><input type="checkbox" value="python" class="inline">Python</label>
+          <label><input type="checkbox" value="ruby" class="inline">Ruby</label>
+          <label><input type="checkbox" value="C" class="inline">C</label>
+        </fieldset>
+        <fieldset>
+          <label>Any additional comments?
+            <textarea name="comments" rows="3" cols="30" placeholder="What are your thoughts?"></textarea>
+        </fieldset>
+        <input type="submit" value="Submit" id="submit">
+      </form>
+    </main>
+  </body>
+</html>
